@@ -8,7 +8,7 @@ todayDate = datetime.date.today()
 user_agent = ("Top Daily Car Pic 1.0 by /u/CodeTestAccount")
 r = praw.Reddit(user_agent=user_agent)
 
-r.login('CodeTestAccount', 'AccountTestCode')
+r.login(*accountnamehere*, *passwordhere*)
 
 #takes the top submission from a number of car related subreddits
 submissions = r.get_subreddit('miata+RX7+mustang').get_top(limit=1)
