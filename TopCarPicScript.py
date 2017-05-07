@@ -23,4 +23,4 @@ print("Adding source to post")
 #Adds a comment that constructs the source by making a new string out of the various
 #parts needed
 submission2.add_comment('Source: ' + "www.reddit.com/r/"+str(submission.subreddit)+"/comments/"+submission.id+"/")
-print("Done")
+print("Finished")
