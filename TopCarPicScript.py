@@ -5,13 +5,14 @@ import datetime
 
 #gets the date in order to add it to the submission
 todayDate = datetime.date.today()
-user_agent = ("Top Daily Car Pic 1.0 by /u/CodeTestAccount")
+user_agent = ("Top Daily Car Pic 1.2 by /u/CodeTestAccount")
+#change log: updated subreddits and url generation
 r = praw.Reddit(user_agent=user_agent)
 
 r.login(*accountnamehere*, *passwordhere*)
 
 #takes the top submission from a number of car related subreddits
-submissions = r.get_subreddit('miata+RX7+mustang').get_top(limit=1)
+submissions = r.get_subreddit('miata+RX7+mustang+subaru').get_top(limit=1)
 submission = next(submissions)
 saveUrl = submission.url
 print("Submitting picture")
