@@ -11,7 +11,7 @@ r = praw.Reddit(user_agent=user_agent)
 
 r.login(*accountnamehere*, *passwordhere*)
 
-#takes the top submission from a number of car related subreddits.
+#takes the top submission from a number of car related subreddits...
 submissions = r.get_subreddit('miata+RX7+mustang+subaru').get_top(limit=1)
 submission = next(submissions)
 saveUrl = submission.url
