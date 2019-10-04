@@ -3,6 +3,7 @@ import praw
 import urllib.request
 import datetime
 
+# PR - 1
 #gets the date in order to add it to the submission
 todayDate = datetime.date.today()
 user_agent = ("Top Daily Car Pic 1.2 by /u/CodeTestAccount")
