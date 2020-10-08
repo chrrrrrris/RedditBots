@@ -12,7 +12,7 @@ r = praw.Reddit(user_agent=user_agent)
 r.login(*accountnamehere*, *passwordhere*)
 
 #takes the top submission from a number of car related subreddits
-submissions = r.get_subreddit('miata+RX7+mustang+subaru+jimny').get_top(limit=1)
+submissions = r.get_subreddit('miata+RX7+mustang+subaru+jimny+wrx').get_top(limit=1)
 submission = next(submissions)
 saveUrl = submission.url
 print("Submitting picture")
@@ -24,4 +24,4 @@ print("Adding source to post")
 #Adds a comment that constructs the source by making a new string out of the various
 #parts needed
 submission2.add_comment('Source: ' + "www.reddit.com/r/"+str(submission.subreddit)+"/comments/"+submission.id+"/")
-print("Finished")
+print("Completed")
